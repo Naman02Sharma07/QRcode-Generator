@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="em">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>QR code generator</title>
+        <link href="https://fonts:googleapis.com/css2?family=lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="QRstyle.css"><!--this is linking our css file to main index .html-->
+    </head>
+    <body>
+        <div class="flexbox"><!--Ithing iput all the stufee inside the flex box that would look quite good-->
+            <div class="container">
+                <h1>QR code generator</h1><!--this for the heading -->
+
+                <div class="box">
+                    <input type="text" id="input" placeholder="Enter text here"><!--here we take the input as the text-->
+                    <button type="submit" id="qr-code">Create code</button><!--it for creating a button on which create code would be written-->
+                </div>
+                <span id="loading"></span>
+                <img src="" id="code-img"><!--this would be responsble for the the image of qr code that we fecth by the help of an API-->
+            </div>
+            <script src="QRscript.js"></script><!--this is basically for linking our js script to the index file-->
+        </div>
+    </body>
